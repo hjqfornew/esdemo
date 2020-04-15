@@ -1,0 +1,15 @@
+{
+    "demo_index":{
+        "properties":{
+            "id":{
+                "type":"integer"
+            },
+            "name":{
+                "type":"keyword"
+            },
+            "money":{
+                "type":"float"
+            }
+        }
+    }
+}
