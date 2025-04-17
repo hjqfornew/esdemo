@@ -4,27 +4,27 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class Graph {
-    private HashMap<Integer, GraphNode> nodeHashMap;
-    private HashSet<Edge> edgeHashSet;
+    private HashMap<Integer, GraphNode> nodes;
+    private HashSet<Edge> edges;
 
-    public Graph(HashMap<Integer, GraphNode> nodeHashMap, HashSet<Edge> edgeHashSet) {
-        this.nodeHashMap = nodeHashMap;
-        this.edgeHashSet = edgeHashSet;
+    public Graph(HashMap<Integer, GraphNode> nodes, HashSet<Edge> edges) {
+        this.nodes = nodes;
+        this.edges = edges;
     }
 
-    public HashMap<Integer, GraphNode> getNodeHashMap() {
-        return nodeHashMap;
+    public HashMap<Integer, GraphNode> getNodes() {
+        return nodes;
     }
 
-    public void setNodeHashMap(HashMap<Integer, GraphNode> nodeHashMap) {
-        this.nodeHashMap = nodeHashMap;
+    public void setNodes(HashMap<Integer, GraphNode> nodes) {
+        this.nodes = nodes;
     }
 
-    public HashSet<Edge> getEdgeHashSet() {
-        return edgeHashSet;
+    public HashSet<Edge> getEdges() {
+        return edges;
     }
 
-    public void setEdgeHashSet(HashSet<Edge> edgeHashSet) {
-        this.edgeHashSet = edgeHashSet;
+    public void setEdges(HashSet<Edge> edges) {
+        this.edges = edges;
     }
 }
