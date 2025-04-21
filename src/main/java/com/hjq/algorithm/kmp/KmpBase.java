@@ -1,5 +1,9 @@
 package com.hjq.algorithm.kmp;
-
+/**
+ * 查询子串问题
+ *  @author: hjq
+ *  @date: 2025/4/21
+ */
 public class KmpBase {
     // https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
     /**
@@ -31,6 +35,14 @@ public class KmpBase {
         return y==needleArr.length?x-y:-1;
     }
 
+    /**
+     * 返回每个位置i上，0到 i-1 前缀 和 后缀 最长相等的长度
+     * 如 abcfabcg ,g这个位置 的值为3
+     * @param
+     * @return
+     * @author hjq
+     * @date 2025/4/17
+     */
     private static int[] findNext(String needle) {
         int[] next = new int[needle.length()];
         next[0] = -1;
